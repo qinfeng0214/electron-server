@@ -8,7 +8,7 @@ module.exports = app => {
       autoIncrement: true,
       comment: '统计记录ID，自增主键',
     },
-    qqAccountId: {
+    qqaccount_id: {
       type: INTEGER,
       allowNull: false,
       comment: '关联的QQ账号ID，外键关联qq_accounts表',

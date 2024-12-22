@@ -92,7 +92,7 @@ class QQAccountController extends Controller {
  */
   async updateStats() {
     const { ctx } = this;
-    const { id: qqAccountId } = ctx.params;
+    const { id: qqaccount_id } = ctx.params;
 
     // 验证请求参数
     ctx.validate({
@@ -100,7 +100,7 @@ class QQAccountController extends Controller {
       creditScore: { type: 'number', required: true, min: 0 },
     });
 
-    const result = await ctx.service.qqAccount.updateStats(qqAccountId, ctx.request.body);
+    const result = await ctx.service.qqAccount.updateStats(qqaccount_id, ctx.request.body);
     ctx.body = {
       success: true,
       data: result,

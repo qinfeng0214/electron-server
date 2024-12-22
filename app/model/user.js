@@ -13,7 +13,7 @@ module.exports = app => {
       allowNull: false,
       comment: '用户名，支持中文、数字、英文字母等任意字符',
     },
-    accountId: {
+    account_id: {
       type: STRING(10),
       allowNull: false,
       unique: true,
@@ -28,7 +28,7 @@ module.exports = app => {
       allowNull: false,
       comment: '密码，8-16位字母数字特殊字符组合',
     },
-    securityKey: {
+    security_key: {
       type: STRING(6),
       allowNull: false,
       validate: {

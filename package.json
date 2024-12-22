@@ -12,7 +12,9 @@
     "egg-cors": "^3.0.1",
     "egg-jwt": "^3.1.7",
     "egg-scripts": "2",
-    "egg-validate": "^2.0.2"
+    "egg-sequelize": "^6.0.0",
+    "egg-validate": "^2.0.2",
+    "mysql2": "^3.11.5"
   },
   "devDependencies": {
     "egg-bin": "6",

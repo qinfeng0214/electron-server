@@ -27,9 +27,9 @@ class QQAccountService extends Service {
     });
   }
 
-  async updateStats(qqAccountId, statsDTO) {
+  async updateStats(qqaccount_id, statsDTO) {
     return await this.ctx.service.qqStatsHistory.create({
-      qqAccountId,
+      qqaccount_id,
       ...statsDTO,
       recordDate: new Date(),
     });
